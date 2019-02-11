@@ -1,0 +1,23 @@
+[
+    {
+        "msg": ""
+    },
+    {
+        "name": "Command Line Heroes: BASH",
+        "path": "games/clh-bash",
+        "thumb": "games/clh-bash.png"
+    },
+    {
+        "msg": ""
+    },
+    {
+        "name": "Fleshgod",
+        "path": "games/fleshgod/",
+        "thumb": "games/fleshgod.png"
+    },
+    {
+        "name": "Nuclear Briefcase",
+        "path": "http://v6p9d9t4.ssl.hwcdn.net/html/1084541/Nuclear_Briefcase_HTML/index.html?v=1542785245",
+        "thumb": "games/nuclear-briefcase.jpg"
+    }
+]
