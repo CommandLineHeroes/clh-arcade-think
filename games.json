@@ -11,6 +11,11 @@
         "msg": ""
     },
     {
+        "name": "Pitty About Earth",
+        "path": "games/pae/",
+        "thumb": "games/pity-about-earth.png"
+    },
+    {
         "name": "Fleshgod",
         "path": "games/fleshgod/",
         "thumb": "games/fleshgod.png"
