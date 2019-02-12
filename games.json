@@ -22,7 +22,7 @@
     },
     {
         "name": "Zorbio",
-        "path": "http://172.20.10.7:8088/",  // change this to laptop running zor server IP
+        "path": "http://172.20.10.7:8088/",
         "thumb": "games/zorbio.png"
     },
 
@@ -35,6 +35,11 @@
         "name": "Markus",
         "path": "https://v6p9d9t4.ssl.hwcdn.net/html/617888/index.html?v=1542786815",
         "thumb": "games/markus.png"
+    },
+    {
+        "name": "SquareOff",
+        "path": "games/squareoff/",
+        "thumb": "games/squareoff_thumb.png"
     }
 
 ]
