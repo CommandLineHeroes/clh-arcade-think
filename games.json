@@ -21,14 +21,20 @@
         "thumb": "games/fleshgod.png"
     },
     {
+        "name": "Zorbio",
+        "path": "http://172.20.10.7:8088/",  // change this to laptop running zor server IP
+        "thumb": "games/zorbio.png"
+    },
+
+    {
         "name": "Nuclear Briefcase",
         "path": "http://v6p9d9t4.ssl.hwcdn.net/html/1084541/Nuclear_Briefcase_HTML/index.html?v=1542785245",
         "thumb": "games/nuclear-briefcase.jpg"
     },
     {
-        "name": "SpamTowerSpam",
-        "path": "http://v6p9d9t4.ssl.hwcdn.net/html/1082033/html5/index.html?v=1542801155",
-        "thumb": "games/spamtowerspam.png"
+        "name": "Markus",
+        "path": "https://v6p9d9t4.ssl.hwcdn.net/html/617888/index.html?v=1542786815",
+        "thumb": "games/markus.png"
     }
 
 ]
