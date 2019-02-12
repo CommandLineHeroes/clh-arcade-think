@@ -910,7 +910,7 @@ var MainmenuState = (function (_Phaser$State) {
                 }
             });
 
-            this.socket = (0, _socketIoClient2['default'])("http://localhost:3100");
+            this.socket = (0, _socketIoClient2['default'])("http://10.249.86.144:3100");
 
             this.socket.on('connect', function () {
                 console.log("WebSocket connection established and ready.");
@@ -5097,7 +5097,7 @@ JSONPPolling.prototype.doPoll = function () {
   this.script = script;
 
   var isUAgecko = 'undefined' != typeof navigator && /gecko/i.test(navigator.userAgent);
-  
+
   if (isUAgecko) {
     setTimeout(function () {
       var iframe = document.createElement('iframe');
