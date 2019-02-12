@@ -22,7 +22,7 @@
     },
     {
         "name": "Zorbio",
-        "path": "http://172.20.10.7:8088/",
+        "path": "http://10.249.86.144:8888/",
         "thumb": "games/zorbio.png"
     },
 
