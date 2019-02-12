@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <link rel="manifest" href="./manifest.json">
+
+    <title>Square Off!</title>
+    <link href='https://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div id="main-menu">
+    <img id="logo" src="assets/images/logo.png" alt="Square Off logo"/>
+    <input type="text" name="nick" id="nick" placeholder="Nickname?"/>
+
+    <div class="color-picker">
+        <div data-color="#D70060" class="pink"></div>
+        <div data-color="#E5282E" class="red"></div>
+        <div data-color="#F18D05" class="orange"></div>
+        <div data-color="#61AE24" class="green"></div>
+        <div data-color="#00A1CB" class="teal"></div>
+        <div data-color="#16E1E1" class="blue"></div>
+    </div>
+
+    <button disabled name="button" id="enter_queue_button">PLAY</button>
+    <!--<button disabled name="button" id="invite_friend_button">VS FRIEND</button>-->
+
+    <div id="show-about">&nbsp;?&nbsp;</div>
+
+    <div id="about">
+
+        <h1><span id="hide-about">&nbsp;X&nbsp;</span> About Square Off</h1>
+
+        <p>Hi!  We&rsquo;re <a href="https://twitter.com/mwcz" target="_blank">Michael</a>  and <a href="https://twitter.com/caramelcode" target="_blank">Jared</a>, aka <a
+                href="http://scripta.co">Scripta Games</a>.  <a
+                href="http://sqoff.com">Square Off</a> is our submission to the <a
+                href="http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=91554" target="_blank">Ludum Dare 35</a> game jam.  We
+            built it over 72 hours of madness, from April 15-18 2016.</p>
+
+        <p>In the game, a smoky disc bounces around on a board.  You can deflect
+            the disc by placing three blocks.  If the disc hits your goal (colored
+            line at the bottom of the screen), your opponent gets a point!  First
+            to 7 points wins.</p>
+
+        <p>When you click play, you&rsquo;ll be paired with another random player.
+            If no one else is playing, try sharing the game with a friend! :)</p>
+
+        <p>We built it on entirely open source software: <a href="https://getfedora.org/">Fedora</a>
+            as our OS of choice, <a href="http://phaser.io/">Phaser</a> game framework,
+            <a href="https://github.com/schteppe/p2.js">p2</a> for physics,
+            <a href="https://nodejs.org/en/">Node.js</a> for multiplayer,
+            <a href="https://lodash.com/">lodash</a> utility belt.  Sounds were generated with
+            <a href="https://github.com/grimfang4/sfxr">sfxr</a>.</p>
+
+        <p><a href="https://github.com/ScriptaGames/SquareOff/">View source</a>.</p>
+        <br/>
+        <p>&copy; Copyright Scripta, Inc. 2016</p>
+
+    </div>
+</div>
+
+<div id="waiting">
+    <div class="loading-spinner"></div>
+    <p>Finding an opponent...</p>
+    <p class="status">
+        <span class="players"></span> online.
+        <span class="games"></span> in progress.
+        <span class="invite">Share <u>sqoff.com</u> with a friend to play against them!</span>
+    </p>
+</div>
+
+
+<script src="scripts/phaser.min.js"></script>
+
+
+<!-- Remove the comments on this line if you want to use the phaser debug plugin, also see Boot.js -->
+<!-- <script src="scripts/phaser-debug.js"></script> -->
+
+
+<!-- Remove the comments on this line if you want to use the phaser tiled plugin, also see Boot.js -->
+<!-- <script src="js/phaser-tiled.js"></script> -->
+
+
+<script src="scripts/game.js"></script>
+
+</body>
+</html>

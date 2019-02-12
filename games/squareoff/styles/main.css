@@ -1,0 +1,158 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: inherit;
+    width: inherit;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    font-family: 'Bowlby One SC';
+    font-size: 1.6em;
+}
+
+input, button {
+    font-family: 'Bowlby One SC';
+    font-size: 1em;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#nick {
+    width: 40vh;
+    border: none;
+    font-size: 1rem;
+}
+
+.pdebug{
+    left: 0px;
+}
+
+#main-menu,
+#waiting,
+#phaser-canvas {
+    display: none;
+}
+
+#waiting {
+    text-align: center;
+}
+#waiting .status {
+    font-size: 1rem;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#waiting .invite {
+    display: block;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    animation-duration: 1.45s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.62,.28,.23,.99);
+    animation-delay: 0.36s;
+    height: 7vh;
+    width: 7vh;
+    background: white;
+    margin: 6vh auto;
+}
+
+#enter_queue_button {
+    margin: 10px auto;
+    width: 20vh;
+    height: 20vh;
+    display: block;
+    background: white;
+    border: none;
+    font-size: 5vh;
+}
+
+.color-picker {
+    width: 40vh;
+    height: 6.665vh;
+    margin: 10px 0;
+}
+.color-picker * {
+    float: left;
+    width: 6.665vh;
+    height: 6.6657vh;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.color-picker *:hover {
+    outline: 1px dashed #ccc;
+    z-index: 30;
+}
+.color-picker *.active {
+    outline: 1px solid white;
+    z-index: 40;
+}
+
+.color-picker .pink   { background-color: #D70060; }
+.color-picker .red    { background-color: #E5282E; }
+.color-picker .orange { background-color: #F18D05; }
+.color-picker .green  { background-color: #61AE24; }
+.color-picker .blue   { background-color: #00A1CB; }
+.color-picker .teal   { background-color: #16E1E1; }
+
+#logo {
+    height: 40vh;
+    width: 40vh;
+    margin: 10px 0;
+    display: block;
+}
+
+#about {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background: rgba(0,0,0,0.9);
+    z-index: 50;
+    overflow-y: auto;
+}
+
+a { color: white; }
+a:visited { color: white; }
+a:active { color: white; }
+
+#hide-about,
+#show-about {
+    font-size: 1.4rem;
+    border: 3px solid white;
+    opacity: 0.4;
+    position: absolute;
+    cursor: pointer;
+}
+
+#hide-about {
+    top: 0;
+    right: 0;
+}
+#show-about {
+    right: 10px;
+    bottom: 10px;
+}
+#hide-about:hover,
+#show-about:hover {
+    opacity: 1;
+}
